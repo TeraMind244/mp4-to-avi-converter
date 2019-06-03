@@ -2,7 +2,7 @@
 
 ### Description
 
-Convert mp4 file type to avi file type.
+Convert `.mp4` file folder to `.avi` file folder.
 
 ### Installation
 
