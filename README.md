@@ -16,7 +16,7 @@ Convert `.mp4` file folder to `.avi` file folder.
 
 2. Prepare a `destination` folder.
 
-3. Run command line console from this repository location and run
+3. Run `cmd` from this repository location and run
 
 ```
 python converter.py {path-to-origin-folder} {path-to-destination-folder}
