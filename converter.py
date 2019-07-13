@@ -7,9 +7,21 @@ def convert_mp4_to_avi(file_name, output_directory):
     input_name = file_name
     output_name = ntpath.basename(file_name)
     output = output_directory + output_name.replace('.mp4', '.avi', 1)
-    cmd = 'ffmpeg -i "{input}" -vcodec copy -acodec copy "{output}"'.format(input = input_name, 
-                      output = output)
+    cmd = 'ffmpeg -i "{input}" -c:v libx264 -c:a libmp3lame -b:a 384K "{output}"'.format(
+                                                    input = input_name, 
+                                                    output = output)
+#    print(cmd)
     return os.popen(cmd)
+
+#input_directory = "C://Users/TriCVM/Desktop/download/"
+#output_directory = "C://Users/TriCVM/Desktop/karaoke/"
+#files = glob.glob(input_directory + '*.mp4')
+#for file_name in files:
+#    try:
+##        print(file_name)
+#        convert_mp4_to_avi(file_name, output_directory)
+#    except:
+#        raise
 
 def main():
     input_directory = sys.argv[1]
