@@ -4,6 +4,8 @@
 
 Convert `.mp4` file folder to `.avi` file folder.
 
+**Important note:** Some AV readers cannot read new `.avi` format. Please note that this converter will convert to the old `.avi` format that generally all AV readers can process. Video files in `.avi` is still supported by modern media players though.
+
 ### Installation
 
 1. [Python](https://www.python.org/downloads/) 2.7 or 3.6 is recommended.
